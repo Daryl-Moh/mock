@@ -1,0 +1,31 @@
+TCP connection
+
+-- Server --
+
+3) Recieves request from Client --> GET<space>/index.html<space>HTTP/1.1
+
+4) Checks the request and returns:
+	
+	HTTP/1.1<space>200<space>OK\r\n
+	\r\n
+	<contents of index.html in bytes>
+
+	1st Term - HTTP/1.1 (no change)
+	2nd Term - 200 OK \r\n <-- if resource exists
+	3rd Term - contents of requested resource as bytes 
+
+5) Close the connection
+	
+
+Port 3000
+
+-- Client --
+
+1) browser address bar --> http://localhost:3000/index.html
+
+2) GET /index.html HTTP/1.1
+
+
+
+--port 8080 --docRoot./target:/opt/tmp/www
+
